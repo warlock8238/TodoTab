@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日待办</title>
+    <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+    <div class="main-bg">
+        <div class="container">
+            <div class="header">
+                <div class="header-icon-title">
+                    <span class="header-icon">📝</span>
+                    <h1>今日待办</h1>
+                </div>
+                <div class="date" id="currentDate"></div>
+            </div>
+
+            <div class="todo-main-content">
+                <!-- 事项待办 -->
+                <div class="todo-column" id="tasks-column">
+                    <h2><span class="column-icon">📋</span> 事项待办</h2>
+                    <div class="add-todo">
+                        <input type="text" id="newTaskTodo" placeholder="添加新的事项..." maxlength="100">
+                        <button id="addTaskTodoBtn">添加</button>
+                    </div>
+                    <div class="todo-list" id="taskList">
+                        <!-- 事项待办将在这里动态显示 -->
+                    </div>
+                </div>
+
+                <!-- 学习待办 -->
+                <div class="todo-column" id="studies-column">
+                    <h2><span class="column-icon">📚</span> 学习待办</h2>
+                    <div class="add-todo">
+                        <input type="text" id="newStudyTodo" placeholder="添加新的学习任务..." maxlength="100">
+                        <button id="addStudyTodoBtn">添加</button>
+                    </div>
+                    <div class="todo-list" id="studyList">
+                        <!-- 学习待办将在这里动态显示 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalTasks">0</span>
+                    <span class="stat-label">总事项</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="completedTasks">0</span>
+                    <span class="stat-label">已完成</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="totalStudies">0</span>
+                    <span class="stat-label">总学习</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="completedStudies">0</span>
+                    <span class="stat-label">已完成</span>
+                </div>
+            </div>
+            <div class="footer">
+                <button id="clearCompletedTasks">清除已完成事项</button>
+                <button id="clearCompletedStudies">清除已完成学习</button>
+            </div>
+        </div>
+    </div>
+    <script src="newtab.js"></script>
+</body>
+</html> 

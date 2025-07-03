@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待办提醒助手</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <h2>📝 待办提醒助手</h2>
+            <div class="quick-stats">
+                <span id="pendingCount">0</span> 个待完成
+            </div>
+        </div>
+        
+        <div class="quick-add">
+            <input type="text" id="quickTodo" placeholder="快速添加待办..." maxlength="50">
+            <button id="quickAddBtn">+</button>
+        </div>
+        
+        <div class="todo-preview" id="todoPreview">
+            <!-- 待办预览将在这里显示 -->
+        </div>
+        
+        <div class="actions">
+            <button id="openNewTab">打开新标签页</button>
+            <button id="viewAll">查看全部</button>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 
